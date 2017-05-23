@@ -1,6 +1,7 @@
 ## Interface: 11200
 ## Title: Bartender2 BindingSwap
 ## Notes: Swaps the keybindings amongst the bars.
+## Notes-ruRU: Меняет места сочетания клавиш среди панелей.
 ## Version: 0.1
 ## Author: Rabbit
 ## X-Category: Other

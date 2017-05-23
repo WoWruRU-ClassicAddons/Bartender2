@@ -1,11 +1,15 @@
 ## Interface: 11200
-## Title: Bartender2 Dreamlayout |cff7fff7f -Ace2-|r
+## Title: Bartender2 Dreamlayout
 ## Notes: Maia's Mockup layout
+## Notes-ruRU: Измененный макет панелей
 ## Version: 0.1
 ## Author: Mikma
 ## X-Category: Other
 ## X-eMail: mikma@edu.joroinen.fi/
 ## X-Website: http://wow.reaktio.net
 ## Dependencies: Bartender2
+
+Locale\enUS.lua
+Locale\ruRU.lua
 
 Dreamlayout.lua

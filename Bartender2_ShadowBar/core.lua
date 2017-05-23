@@ -1,4 +1,5 @@
 BT2ShadowBar = Bartender:NewModule("shadowbar")
+local L = AceLibrary("AceLocale-2.2"):new("BT2shadowbar")
 local BS = AceLibrary("Babble-Spell-2.2")
 
 function BT2ShadowBar:OnEnable()
@@ -6,7 +7,7 @@ function BT2ShadowBar:OnEnable()
 	self.ab[2] = 8
 	self:RegisterEvent("SpecialEvents_PlayerBuffGained", "ShiftON")
 	self:RegisterEvent("SpecialEvents_PlayerBuffLost", "ShiftOFF")
-	Bartender:Print("Shadow Bar enabled")
+	Bartender:Print(L["Shadow Bar enabled"])
 end
 
 function BT2ShadowBar:ShiftON(buffName, buffIndex)

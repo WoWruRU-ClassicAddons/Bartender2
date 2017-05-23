@@ -2,10 +2,6 @@ BT2HunterBars = Bartender:NewModule("hunterbars")
 
 local L = AceLibrary("AceLocale-2.2"):new("BT2HunterBars")
 
-L:RegisterTranslations("enUS", function() return {
-	["Auto Shot"]="Auto Shot",
-} end)
-
 L:RegisterTranslations("deDE", function() return {
 	["Auto Shot"]="Automatischer Schuss",
 } end)
@@ -26,13 +22,13 @@ function BT2HunterBars:OnInitialize()
 		page = 7
 	})
 	Bartender.options.args.hunter = {
-		name = "Hunter Bars",
-		desc = "Config for Hunter Bars",
+		name = L["Hunter Bars"],
+		desc = L["Config for Hunter Bars"],
 		type = "group",
 		args = {
 			page = {
-				name = "Page",
-				desc = "Page to switch main bar to while out of range for Auto-Shot",
+				name = L["Page"],
+				desc = L["Page to switch main bar to while out of range for Auto-Shot"],
 				type = "range",
 				min = 2, max = 10, step = 1,
 				get = function() return self.db.profile.page end,

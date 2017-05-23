@@ -1,20 +1,17 @@
 ## Interface: 11200
-## Title: Bartender2 Druid Bar |cff7fff7f -Ace2-|r
+## Title: Bartender2 Druid Bar
 ## Notes: This add-on reproduces the bar switch that happens when a Rogue goes into Stealth but with Prowl.
+## Notes-ruRU: Аддон производит переключение панелей так же, когда Разбойник переходит в "Незаметность", но только для Друида.
 ## Version: 1.1
 ## Author: Greywind
 ## X-Category: Druid
 ## X-Embeds: Ace2, Babble-2.2, GratuityLib, CompostLib, SpecialEventsEmbed
 ## OptionalDeps: Ace2, Babble-2.2, GratuityLib, CompostLib, SpecialEventsEmbed
 ## Dependencies: Bartender2
-
 ## LoadOnDemand: 1
 ## X-S&D-Class: Druid
 
-libs\Compost-2.0\Compost-2.0.lua
-libs\Gratuity-2.0\Gratuity-2.0.lua
-libs\SpecialEvents-Aura-2.0\SpecialEvents-Aura-2.0.lua
-libs\AceLocale-2.2\AceLocale-2.2.lua
-libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
+Locale\enUS.lua
+Locale\ruRU.lua
 
-core.lua
+Core.lua

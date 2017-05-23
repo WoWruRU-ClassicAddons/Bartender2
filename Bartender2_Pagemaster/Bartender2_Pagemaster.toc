@@ -1,6 +1,7 @@
 ## Interface: 11200
-## Title: Bartender2_Pagemaster |cff7fff7f -Ace2-|r
+## Title: Bartender2_Pagemaster
 ## Notes: Performs page swaps on bar 1 when you hold shift, ctrl, alt, etc.
+## Notes-ruRU: Замена панели 1 когда вы удерживаете shift, ctrl, alt.
 ## Version: 0.3
 ## Author: Kyahx, Greywind, Mikma, PProvost
 ## Dependencies: Bartender2
@@ -12,11 +13,8 @@
 ## X-eMail: kyahx.pots@gmail.com
 ## X-Website: http://kyahx.wowinterface.com
 
-Libs\Babble-Spell-2.2\Babble-Spell-2.2.lua
-Libs\Compost-2.0\Compost-2.0.lua
-Libs\Gratuity-2.0\Gratuity-2.0.lua
-Libs\SpecialEvents-Aura-2.0\SpecialEvents-Aura-2.0.lua
+Locale\enUS.lua
+Locale\ruRU.lua
 
-Locales.lua
 Pagemaster.lua
 Options.lua

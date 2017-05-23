@@ -1,5 +1,6 @@
 BT2Dreamlayout = Bartender:NewModule("dreamlayout")
 
+local L = AceLibrary("AceLocale-2.2"):new("BT2Dreamlayout")
 local _G = getfenv(0)
 
 function BT2Dreamlayout:OnInitialize()
@@ -22,15 +23,15 @@ function BT2Dreamlayout:OnEnable()
 	BT2DL = true
 	self:CreateLayout() 
 	self:ScheduleRepeatingEvent(self.BGCheck, 0.1, self)
-	Bartender:Print("Dreamlayout enabled")
+	Bartender:Print(L["Dreamlayout enabled"])
 	Bartender.options.args.dreamlayout = {
-		name = "Dreamlayout Skin",
-		desc = "Config for the Dreamlayout Skin",
+		name = L["Dreamlayout Skin"],
+		desc = L["Config for the Dreamlayout Skin"],
 		type = "group",
 		args = {
 			toggleskin = {
-				name = "Toggle",
-				desc = "Toggle skin per bar.",
+				name = L["Toggle"],
+				desc = L["Toggle skin per bar."],
 				type = "group",
 				args = {}
 			}
@@ -38,10 +39,10 @@ function BT2Dreamlayout:OnEnable()
 	}
 	
 	for i=1,8 do
-		local barname = "Bar"..i
+		local barname = L["Bar"]..i
 		Bartender.options.args.dreamlayout.args.toggleskin.args[barname] = {
 			name = barname, type = "toggle",
-			desc = "Toggle skin on "..barname,
+			desc = L["Toggle skin on "]..barname,
 			get = function()
 				return self.db.profile.applyskin[barname]
 			end,

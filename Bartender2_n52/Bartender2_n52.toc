@@ -1,6 +1,7 @@
 ## Interface: 11200
-## Title: Bartender2_n52 |cff7fff7f -Ace2-|r
+## Title: Bartender2_n52
 ## Notes: Layout designed to Bar1 for SpeedPad n52
+## Notes-ruRU: Макет для Панели1
 ## Version: 0.1
 ## Author: Mikma
 ## Dependencies: Bartender2

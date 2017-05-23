@@ -1,7 +1,7 @@
 Bartender = AceLibrary("AceAddon-2.0"):new("AceEvent-2.0", "AceHook-2.1", "AceDB-2.0", "AceConsole-2.0", "AceModuleCore-2.0")
 Bartender:RegisterDB("BarDB")
 Bartender:SetModuleMixins("AceEvent-2.0")
-Bartender.version = "2.0." .. string.sub("$Revision: 15914 $", 12, -3)
+Bartender.version = "2.0." .. string.sub("$Revision: 15915 $", 12, -3)
 Bartender.date = string.sub("$Date: 2006-11-04 12:25:58 -0500 (Sat, 04 Nov 2006) $", 8, 17)
 Bartender:RegisterDefaults('profile', BT2Defaults )
 

@@ -1,4 +1,5 @@
 BT2DruidBar = Bartender:NewModule("druidbar")
+local L = AceLibrary("AceLocale-2.2"):new("BT2druidbar")
 local BS = AceLibrary("Babble-Spell-2.2")
 
 function BT2DruidBar:OnEnable()
@@ -6,7 +7,7 @@ function BT2DruidBar:OnEnable()
 	self.ab[2] = 8
 	self:RegisterEvent("SpecialEvents_PlayerBuffGained", "ShiftON")
 	self:RegisterEvent("SpecialEvents_PlayerBuffLost", "ShiftOFF")
-	Bartender:Print("Druid Bar enabled")
+	Bartender:Print(L["Druid Bar enabled"])
 end
 
 function BT2DruidBar:ShiftON(buffName, buffIndex)

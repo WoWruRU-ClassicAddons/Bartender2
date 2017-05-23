@@ -1,4 +1,5 @@
 local L = AceLibrary("AceLocale-2.2"):new("Bartender")
+local waterfall = AceLibrary("Waterfall-1.0")
 
 Bartender.options = {
 	type = "group",
@@ -182,5 +183,6 @@ for i = 1, 9 do
 	end
 end
 
-Bartender:RegisterChatCommand({ "/bar", "/bartender" }, Bartender.options )
-
+Bartender:RegisterChatCommand({"/barcl", "/bartendercl"}, Bartender.options)
+Bartender:RegisterChatCommand({ "/bar", "/bartender"}, function() waterfall:Open('Bartender') end)
+waterfall:Register('Bartender', 'aceOptions', Bartender.options, 'title','Bartender 2.0. Revision: 15915','colorR', 0.9, 'colorG', 0.9, 'colorB', 0) 
